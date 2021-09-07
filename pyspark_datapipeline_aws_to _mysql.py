@@ -19,8 +19,8 @@ spark=SparkSession.builder.config("spark.jars", "/opt/spark/jars/mysql-connector
             .getOrCreate()
 
 #hadoop configuration for acessing aws
-spark._jsc.hadoopConfiguration().set("fs.s3a.access.key","AKIAQKIUSS7F6JTCMYNL")
-spark._jsc.hadoopConfiguration().set("fs.s3a.secret.key","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")
+spark._jsc.hadoopConfiguration().set("fs.s3a.access.key","********************")
+spark._jsc.hadoopConfiguration().set("fs.s3a.secret.key","*******************************")
 spark._jsc.hadoopConfiguration().set("fs.s3a.endpoint","s3.amazonaws.com")
 
 #read Dataframe from aws s3
