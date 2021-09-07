@@ -17,8 +17,8 @@ if __name__=='__main__':
         .appName("Read AWS S3 & write MYSQL")\
             .master("local[*]")\
                 .getOrCreate()
-    spark._jsc.hadoopConfiguration().set("fs.s3a.access.key","AKIAQKIUSS7F6JTCMYNL")
-    spark._jsc.hadoopConfiguration().set("fs.s3a.secret.key","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")
+    spark._jsc.hadoopConfiguration().set("fs.s3a.access.key","************************")
+    spark._jsc.hadoopConfiguration().set("fs.s3a.secret.key","*********************************")
     spark._jsc.hadoopConfiguration().set("fs.s3a.endpoint","s3.amazonaws.com")
     
     myDf=spark.read\
